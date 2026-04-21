@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploreEase - Travel Booking</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-globe-americas me-2"></i>ExploreEase
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="packages.html">Tour Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin.html">Admin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('images/incredible india hero.jpg'); background-size: cover; background-position: center; padding: 150px 0; position: relative;">
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);"></div>
+        <div class="container position-relative" style="z-index: 1; color: white;">
+            <h1>Discover Incredible India</h1>
+            <p>Explore India's most beautiful destinations with our exclusive tour packages. From the majestic Himalayas to serene beaches, book your dream Indian vacation today!</p>
+            <a href="packages.html" class="btn btn-primary btn-lg">View Tour Packages</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Why Choose ExploreEase?</h2>
+                <p class="lead">We make travel planning easy and enjoyable</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-4">
+                        <div class="mb-3">
+                            <i class="fas fa-map-marked-alt text-primary" style="font-size: 3rem;"></i>
+                        </div>
+                        <h4>Handpicked Indian Destinations</h4>
+                        <p>We carefully select the most amazing locations across India for unforgettable experiences, from the Himalayas to Kerala's backwaters.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-4">
+                        <div class="mb-3">
+                            <i class="fas fa-rupee-sign text-primary" style="font-size: 3rem;"></i>
+                        </div>
+                        <h4>Best Price Guarantee</h4>
+                        <p>We offer competitive prices and special deals to ensure you get the best value for your money.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-4">
+                        <div class="mb-3">
+                            <i class="fas fa-headset text-primary" style="font-size: 3rem;"></i>
+                        </div>
+                        <h4>24/7 Support</h4>
+                        <p>Our dedicated customer support team is always ready to assist you before, during, and after your trip.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Packages Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Featured Indian Tour Packages</h2>
+                <p class="lead">Check out our most popular Indian destinations</p>
+            </div>
+            <div class="row" id="featured-packages">
+                <!-- Featured packages will be loaded here via JavaScript -->
+                <div class="col-12 text-center">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="packages.html" class="btn btn-outline-primary">View All Packages</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5" style="background-image: url('images/incredible india hero 2.jpg'); background-size: cover; background-position: center; color: white; position: relative;">
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.6);"></div>
+        <div class="container text-center position-relative" style="z-index: 1;">
+            <h2>Ready to Explore Incredible India?</h2>
+            <p class="lead mb-4">Book your dream Indian vacation today and experience the rich culture, diverse landscapes, and warm hospitality!</p>
+            <a href="packages.html" class="btn btn-light btn-lg">Explore Indian Packages</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5><i class="fas fa-globe-americas me-2"></i>ExploreEase</h5>
+                    <p>Your trusted partner for unforgettable travel experiences. We make travel planning easy and enjoyable.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="packages.html">Tour Packages</a></li>
+                        <li><a href="admin.html">Admin</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i>123 Travel Street, Mumbai, India</li>
+                        <li><i class="fas fa-phone me-2"></i>+91 98765 43210</li>
+                        <li><i class="fas fa-envelope me-2"></i>info@exploreease.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 ExploreEase. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
