@@ -1,0 +1,174 @@
+/* Main Styles for ExploreEase Travel Booking Website */
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --accent-color: #f39c12;
+    --dark-color: #2c3e50;
+    --light-color: #ecf0f1;
+    --danger-color: #e74c3c;
+    --success-color: #27ae60;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Header Styles */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/incredible india hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+/* Package Cards */
+.package-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.package-card:hover {
+    transform: translateY(-5px);
+}
+
+.package-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.package-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.package-location {
+    color: var(--dark-color);
+    font-weight: 500;
+}
+
+.package-date {
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+.seats-available {
+    background-color: var(--success-color);
+    color: white;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    display: inline-block;
+}
+
+/* Forms */
+.form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 40px 0;
+}
+
+footer a {
+    color: var(--light-color);
+}
+
+footer a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+.btn-success {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-success:hover {
+    background-color: #27ae60;
+    border-color: #27ae60;
+}
+
+/* Loading Spinner */
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+/* Error Messages */
+.error-message {
+    color: var(--danger-color);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* Success Messages */
+.alert-success {
+    background-color: rgba(46, 204, 113, 0.2);
+    border-color: var(--success-color);
+    color: var(--success-color);
+}
+
+/* Error Messages */
+.alert-danger {
+    background-color: rgba(231, 76, 60, 0.2);
+    border-color: var(--danger-color);
+    color: var(--danger-color);
+}

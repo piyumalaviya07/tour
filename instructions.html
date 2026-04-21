@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploreEase - Instructions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container py-5">
+        <h1 class="mb-4">ExploreEase - India-Centric Travel Website</h1>
+        
+        <div class="card mb-4">
+            <div class="card-header bg-primary text-white">
+                <h2 class="h5 mb-0">Adding Sample Packages</h2>
+            </div>
+            <div class="card-body">
+                <p>To add the sample Indian tour packages to your database, follow these steps:</p>
+                
+                <ol>
+                    <li>Make sure your PHP server is running</li>
+                    <li>Make sure your MySQL server is running</li>
+                    <li>Access the <code>remove_test_package.php</code> file through your web browser to remove any test packages and add all the new Indian tour packages</li>
+                    <li>You should see a confirmation message that packages were updated successfully</li>
+                    <li>Alternatively, you can access <code>add_packages.php</code> and <code>add_more_packages.php</code> individually to add packages</li>
+                </ol>
+                
+                <div class="alert alert-info">
+                    <strong>Note:</strong> If you run this script multiple times, you will have duplicate packages in your database.
+                </div>
+            </div>
+        </div>
+        
+        <div class="card mb-4">
+            <div class="card-header bg-success text-white">
+                <h2 class="h5 mb-0">Viewing the Website</h2>
+            </div>
+            <div class="card-body">
+                <p>After adding the packages, you can view the website:</p>
+                
+                <ol>
+                    <li>Access <code>index.html</code> to view the homepage</li>
+                    <li>Click on "Tour Packages" to see all available packages</li>
+                    <li>Click on "View Details" to see package details</li>
+                    <li>You can also view a <a href="preview_packages.html">preview of the new packages</a> that will be added</li>
+                </ol>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header bg-warning">
+                <h2 class="h5 mb-0">Troubleshooting</h2>
+            </div>
+            <div class="card-body">
+                <p>If you encounter any issues:</p>
+                
+                <ul>
+                    <li>Make sure your PHP and MySQL servers are running</li>
+                    <li>Check that the database connection details in <code>api/config/database.php</code> are correct</li>
+                    <li>If viewing directly from file system (without a server), API calls will not work</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
